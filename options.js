@@ -16,5 +16,12 @@ module.exports = {
                 [{text: "Play again", callback_data: "/again"}]
             ]
         })
+    },
+    loseOptions: {
+        reply_markup: JSON.stringify({
+            inline_keyboard: [
+                [{text: "Get answer", callback_data: "/answer"}],
+            ]
+        })
     }
 }

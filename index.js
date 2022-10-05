@@ -45,12 +45,12 @@ const start = () =>{
     })
 
     bot.on('callback_query', async msg =>{
-        const data = Number(msg.data)
+        const data = msg.data
         const chatId = msg.message.chat.id
         if(data === "/again"){
             return startGame(chatId)
         }
-        if(data === chats[chatId]){
+        if(data == chats[chatId]){
             return await bot.sendMessage(chatId, 'Congratulations. Correct number was: ' + chats[chatId], againOptions)
         }else {
             return await bot.sendMessage(chatId, 'You lose. Correct number was: ' + chats[chatId], againOptions)

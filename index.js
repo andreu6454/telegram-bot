@@ -46,11 +46,6 @@ const start = async () =>{
                 const user = await UserModel.findOne({chatId})
                 return  bot.sendMessage(chatId, `Your name: ${msg.from.first_name}, you have ${user.right} correct answers and ${user.wrong} wrong.`)
             }
-            if(text === '/aboutErik') {
-                await bot.sendMessage(chatId, 'Эрик пидор!')
-                await bot.sendMessage(chatId, 'Эрик пидор!')
-                return  bot.sendMessage(chatId, 'Эрик пидор!')
-            }
             if(text === '/game'){
                 return startGame(chatId)
             }

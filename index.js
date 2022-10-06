@@ -2,7 +2,7 @@ const TelegramApi = require('node-telegram-bot-api')
 const {gameOptions, againOptions, loseOptions} = require('./options')
 const sequelize = require('./db')
 const UserModel = require('./models')
-const {token} = require('./token')
+const {token} = require('./token') // you need to import telegram-bot token.
 
 
 

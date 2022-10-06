@@ -1,7 +1,6 @@
 
 ## simple telegram bot 
 
-    t.me/cdts0bot
 
 bot can start game "Try to guess number from 0 to 9" and send statistics to PostgreSQL 14
 
